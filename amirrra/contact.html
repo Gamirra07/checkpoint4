@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title> contact</title>
+<link rel="stylesheet" href="css/style.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+<script src="https://www.gstatic.com/firebasejs/6.2.4/firebase-app.js"></script>
+</head>
+
+<body>
+
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">ada</a>
+      </div>
+      <ul class="nav navbar-nav">
+            <li> <h1><a href="index.html">home</a></h1> </li>
+            <li><h1><a href="courses.html">courses</a></h1> </li>
+            <li><h1> <a href="contact.html">contact</a></h1>   </li>
+   </div>
+  </nav>
+</ul>
+<center>
+  <form class="form-horizontal" id="contactform">
+      <div class="form-group">
+        <label class="control-label col-sm-2" for="email">Email:</label>
+        <div class="col-sm-10">
+          <input type="email" class="form-control" id="email" placeholder="Enter email">
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="control-label col-sm-2" for="pwd">Password:</label>
+        <div class="col-sm-10"> 
+          <input type="text" class="form-control" id="name" placeholder="Enter name">
+        </div>
+      </div>
+      <div class="form-group">
+          <label class="control-label col-sm-2" for="pwd">phone number:</label>
+          <div class="col-sm-10"> 
+            <input type="number" class="form-control" id="number" placeholder="Enter phone number">
+          </div>
+        </div>
+        <div class="form-group">
+      <label class="control-label col-sm-2" for="pwd">TRACK :</label>
+      <div class="col-sm-10">    
+      <select class="form-control">
+            <option>Web</option>
+            <option>Game</option>
+            <option>AI</option>
+           </select>
+        </div>
+      </div>
+      <div class="form-group"> 
+          <button type="submit" value="submit" class="btn btn-success">Submit</button>
+      </div>
+    </form>
+
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+          apiKey: "AIzaSyCmp0VlTUjYatoD-MxqfMclaaVlc8nTkAU",
+          authDomain: "projet1-25bb6.firebaseapp.com",
+          databaseURL: "https://projet1-25bb6.firebaseio.com",
+          projectId: "projet1-25bb6",
+          storageBucket: "",
+          messagingSenderId: "323637167404",
+          appId: "1:323637167404:web:5b1ea0b63abaf164"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+      </script>
+
+</body>
+
+
+
+
+</html>
